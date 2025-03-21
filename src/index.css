@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --prayer-font-size: 16px;
+}
+
+/* Safe area insets for iOS devices */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pr-safe {
+    padding-right: env(safe-area-inset-right);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pl-safe {
+    padding-left: env(safe-area-inset-left);
+  }
+  .px-safe {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  .py-safe {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+.logo-font {
+  font-family: "EB Garamond", serif;
+}
+
+.prayer-content {
+  font-size: var(--prayer-font-size);
+  line-height: 1.6;
+  color: #3c342d;
+}
+
+.prayer-content h1,
+.prayer-content h2,
+.prayer-content h3,
+.prayer-content h4,
+.prayer-content h5,
+.prayer-content h6 {
+  color: #3c342d;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.prayer-content h1 {
+  font-size: 1.5em;
+}
+.prayer-content h2 {
+  font-size: 1.4em;
+}
+.prayer-content h3 {
+  font-size: 1.3em;
+}
+.prayer-content h4 {
+  font-size: 1.2em;
+}
+.prayer-content h5 {
+  font-size: 1.1em;
+}
+.prayer-content h6 {
+  font-size: 1em;
+}
+
+.prayer-content p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.prayer-content ul,
+.prayer-content ol {
+  margin: 0.5em 0 1em 1.5em;
+  padding-left: 1em;
+}
+
+.prayer-content ul {
+  list-style-type: disc;
+}
+
+.prayer-content ol {
+  list-style-type: decimal;
+}
+
+.prayer-content li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+.prayer-content strong,
+.prayer-content b {
+  font-weight: 600;
+  color: #2d2823;
+}
+
+.prayer-content em,
+.prayer-content i {
+  font-style: italic;
+}
+
+.prayer-content blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #e9c46a;
+  background-color: #f8f5f0;
+  font-style: italic;
+}
+
+.prayer-content a {
+  color: #b38f2d;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.prayer-content a:hover {
+  color: #8f722d;
+}
+
